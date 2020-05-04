@@ -19,6 +19,7 @@ public static WebDriver driver;
 	
 	@Test
 	public void doLogin(){
+		System.out.println("Executing Login Test");
 		driver.get("https://www.facebook.com/");
 		driver.manage().timeouts().implicitlyWait(20L, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id='email']")).sendKeys("vairajapu@gmail.com");
